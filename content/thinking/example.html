@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" class="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>示例文章标题 - 刘 佳祥</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="preconnect" href="https://fonts.loli.net" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.loli.net/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.loli.net/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" /></noscript>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="../../index.html" class="site-name">刘 佳祥</a>
+    <ul class="nav-links">
+      <li><a href="../../index.html">About</a></li>
+      <li><a href="index.html" class="active">Thinking</a></li>
+      <li><a href="../../photography.html">Photography</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+
+    <a href="index.html" class="back-link">← 随笔</a>
+
+    <article>
+      <header class="article-header">
+        <h1 class="article-title">示例文章标题</h1>
+        <p class="article-date">2026-03-01</p>
+      </header>
+
+      <div class="article-body">
+<p>这是第一段落。在这里写你的想法。</p>
+<p>这是第二段落。Markdown 会自动转换成 HTML 的 <code>&lt;p&gt;</code>
+标签。</p>
+<h2 id="二级标题">二级标题</h2>
+<p>可以使用 <code>##</code> 来创建二级标题。</p>
+<h3 id="三级标题">三级标题</h3>
+<p>也可以用 <code>###</code> 创建三级标题。</p>
+<h2 id="常用格式">常用格式</h2>
+<ul>
+<li><strong>粗体</strong> 使用 <code>**文字**</code></li>
+<li><em>斜体</em> 使用 <code>*文字*</code></li>
+<li><code>代码</code> 使用反引号</li>
+</ul>
+<p>引用：</p>
+<blockquote>
+<p>这是一段引用文字。 可以多行。</p>
+</blockquote>
+<h2 id="使用方法">使用方法</h2>
+<ol type="1">
+<li>在 <code>drafts/</code> 文件夹中创建 <code>.md</code> 文件</li>
+<li>运行 <code>./build-article.sh drafts/你的文章.md</code></li>
+<li>生成的 HTML 会出现在当前目录</li>
+<li>手动在 <code>index.html</code> 中添加链接</li>
+</ol>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 刘佳祥</p>
+  </div>
+</footer>
+
+</body>
+</html>
