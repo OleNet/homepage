@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>On Training Data and Taste — Jiaxiang</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="/" class="site-name">Jiaxiang</a>
+    <ul class="nav-links">
+      <li><a href="/content/books/">Books</a></li>
+      <li><a href="/content/photography/">Photography</a></li>
+      <li><a href="/content/thinking/" class="active">Thinking</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+
+    <a href="/content/thinking/" class="back-link">← Thinking</a>
+
+    <article>
+      <header class="article-header">
+        <h1 class="article-title">On Training Data and Taste</h1>
+        <p class="article-date">2026-02-18</p>
+      </header>
+
+      <div class="article-body">
+        <p>
+          There is a question that keeps returning when working on generative
+          image systems: what does the model actually learn when we show it a
+          million images labeled "high quality"? It learns correlation, not
+          judgment. It learns to predict which images a certain class of
+          annotators, at a certain moment, under certain conditions, preferred.
+        </p>
+        <p>
+          This is not nothing. Correlation at scale is useful. But it is not
+          the same as taste, which requires not just preference but
+          <em>reason</em> — the ability to defend a choice in terms of
+          something other than the choice itself.
+        </p>
+        <p>
+          The practical consequence is that aesthetic models trained on
+          aggregate human preference tend toward the center. They converge on
+          what is broadly pleasing rather than what is precisely right. The
+          more data, the stronger this gravitational pull toward the mean.
+        </p>
+
+        <h2>The problem of the annotation surface</h2>
+        <p>
+          When we ask annotators to rank images, we are asking them to project
+          a private, partially articulated sense of quality onto a binary or
+          ordinal scale. Something is inevitably lost in this projection.
+          The image that is correct for a reason that takes three sentences to
+          explain will often lose to the image that is pleasant for a reason
+          that takes no sentences at all.
+        </p>
+        <p>
+          This is a structural problem, not a data problem. Adding more
+          annotators does not solve it. Training a better reward model does
+          not solve it. The surface on which preference is being recorded is
+          too coarse for the thing we actually want to measure.
+        </p>
+
+        <h2>One possible direction</h2>
+        <p>
+          I have been thinking about whether the right move is not to scale
+          annotation but to stratify it — to find the small number of
+          annotators whose implicit model of quality is coherent and
+          articulate, and to build systems that can learn from their judgments
+          specifically. This is less democratic but possibly more useful.
+        </p>
+        <p>
+          Whether or not that is tractable at the scale we work at, I do not
+          yet know.
+        </p>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>Jiaxiang</p>
+    <p>A quiet space for thinking, reading, and seeing.</p>
+  </div>
+</footer>
+
+</body>
+</html>

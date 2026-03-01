@@ -3,7 +3,7 @@
    Philosophy: Kenya Hara × Academic restraint
    ============================================ */
 
-@import url('https://fonts.loli.net/css2?family=EB+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&display=swap');
+/* 字体通过 HTML 异步加载 */
 
 /* ── Reset ── */
 *, *::before, *::after {
@@ -19,9 +19,9 @@
   --muted:     #666666;
   --link:      #000000;
   --hover:     #888888;
-  --serif:     'EB Garamond', Georgia, serif;
+  --serif:     'EB Garamond', 'Noto Serif SC', Georgia, serif;
   --sans:      'DM Sans', system-ui, sans-serif;
-  --serif-zh:  "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+  --serif-zh:  'Noto Serif SC', "PingFang SC", "Microsoft YaHei", serif;
   --measure:   680px;
   --top:       120px;
 }
