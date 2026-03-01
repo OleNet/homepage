@@ -1,0 +1,9 @@
+# Temporary files
+tmp/
+
+# macOS
+.DS_Store
+
+# Deprecated photos (optional, uncomment to exclude)
+# photos/dep/
+# photos/dep_big/
