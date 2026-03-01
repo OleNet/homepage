@@ -614,3 +614,76 @@ footer p {
 .zh .contact a { font-family: var(--serif-zh); }
 .zh .article-item a { font-family: var(--serif-zh); }
 .zh .publication-item a { font-family: var(--serif); }
+
+/* ── Music Page ── */
+.music-list {
+  list-style: none;
+  columns: 2;
+  column-gap: 2.5rem;
+}
+
+.music-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.8rem;
+  padding: 0.2rem 0;
+  break-inside: avoid;
+}
+
+.song-title {
+  font-family: var(--serif);
+  font-size: 13px;
+  color: var(--ink);
+  flex: 1;
+  min-width: 0;
+}
+
+.song-artist {
+  font-family: var(--sans);
+  font-size: 11px;
+  color: var(--muted);
+  text-align: right;
+  flex-shrink: 0;
+  max-width: 45%;
+}
+
+@media (max-width: 600px) {
+  .music-list {
+    columns: 1;
+  }
+  .song-artist {
+    max-width: 40%;
+  }
+}
+
+.zh .song-title { font-family: var(--serif-zh); font-weight: 300; }
+
+/* ── Pagination ── */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e8e8e8;
+}
+
+.pagination a,
+.pagination .page-current {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  color: var(--muted);
+  transition: color 0.15s;
+}
+
+.pagination a:hover {
+  color: var(--ink);
+}
+
+.pagination .page-current {
+  color: var(--ink);
+  font-weight: 500;
+}
