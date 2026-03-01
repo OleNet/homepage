@@ -3,7 +3,31 @@
    Philosophy: Kenya Hara × Academic restraint
    ============================================ */
 
-/* 字体通过 HTML 异步加载 */
+/* Noto Serif SC - 自托管子集 */
+@font-face { font-family: 'Noto Serif SC'; font-weight: 300; font-display: swap; src: url('fonts/noto-serif-sc-109-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 300; font-display: swap; src: url('fonts/noto-serif-sc-110-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 300; font-display: swap; src: url('fonts/noto-serif-sc-111-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 300; font-display: swap; src: url('fonts/noto-serif-sc-112-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 300; font-display: swap; src: url('fonts/noto-serif-sc-113-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 300; font-display: swap; src: url('fonts/noto-serif-sc-114-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 300; font-display: swap; src: url('fonts/noto-serif-sc-115-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 300; font-display: swap; src: url('fonts/noto-serif-sc-116-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 300; font-display: swap; src: url('fonts/noto-serif-sc-117-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 300; font-display: swap; src: url('fonts/noto-serif-sc-118-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 300; font-display: swap; src: url('fonts/noto-serif-sc-119-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 400; font-display: swap; src: url('fonts/noto-serif-sc-109-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 400; font-display: swap; src: url('fonts/noto-serif-sc-110-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 400; font-display: swap; src: url('fonts/noto-serif-sc-111-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 400; font-display: swap; src: url('fonts/noto-serif-sc-112-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 400; font-display: swap; src: url('fonts/noto-serif-sc-113-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 400; font-display: swap; src: url('fonts/noto-serif-sc-114-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 400; font-display: swap; src: url('fonts/noto-serif-sc-115-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 400; font-display: swap; src: url('fonts/noto-serif-sc-116-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 400; font-display: swap; src: url('fonts/noto-serif-sc-117-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 400; font-display: swap; src: url('fonts/noto-serif-sc-118-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif SC'; font-weight: 400; font-display: swap; src: url('fonts/noto-serif-sc-119-400-normal.woff2') format('woff2'); }
+
+/* EB Garamond & DM Sans - 异步加载 */
 
 /* ── Reset ── */
 *, *::before, *::after {
