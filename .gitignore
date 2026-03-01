@@ -1,6 +1,9 @@
 # Temporary files
 tmp/
 
+# Photos (hosted on Aliyun OSS)
+photos/
+
 # macOS
 .DS_Store
 
