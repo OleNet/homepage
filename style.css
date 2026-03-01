@@ -236,14 +236,6 @@ main {
   height: 100%;
 }
 
-.social-links .social-text {
-  font-family: var(--sans);
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  line-height: 20px;
-}
-
 /* ── Publications Section (Homepage) ── */
 .section-label {
   font-family: var(--sans);
