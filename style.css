@@ -618,11 +618,14 @@ footer p {
 /* ── Music Page ── */
 .music-list {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
   columns: 2;
   column-gap: 2.5rem;
 }
 
 .music-list li {
+  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -651,9 +654,6 @@ footer p {
 @media (max-width: 600px) {
   .music-list {
     columns: 1;
-  }
-  .song-artist {
-    max-width: 40%;
   }
 }
 
