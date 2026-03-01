@@ -124,8 +124,37 @@ nav .nav-links a.active {
 
 /* ── Page Scaffold ── */
 main {
-  padding-top: 40px;
+  padding-top: 100px;
   padding-bottom: 160px;
+}
+
+/* ── Photography Page ── */
+.photography-page {
+  padding-top: 80px;
+}
+
+.photography-page .photo-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.photography-page .photo-item {
+  margin: 0;
+}
+
+.photography-page .photo-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.photography-page .photo-caption {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 0.8rem;
+  letter-spacing: 0.03em;
 }
 
 /* ── About / Index ── */
