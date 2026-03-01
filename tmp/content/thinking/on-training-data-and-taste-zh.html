@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" class="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于训练数据与品味 — 嘉祥</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="/" class="site-name">刘 佳祥</a>
+    <ul class="nav-links">
+      <li><a href="/">About</a></li>
+      <li><a href="/content/thinking/zh.html" class="active">Articles</a></li>
+      <li><a href="/content/photography/zh.html">Photography</a></li>
+      <li><a href="/content/books/zh.html">Readings</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+
+    <a href="/content/thinking/zh.html" class="back-link">← Articles</a>
+
+    <article>
+      <header class="article-header">
+        <h1 class="article-title">关于训练数据与品味</h1>
+        <p class="article-date">2026-02-18</p>
+      </header>
+
+      <div class="article-body">
+        <p>
+          在做生成图像系统的过程中，有一个问题不断回来：当我们给模型看一百万张标注为「高质量」
+          的图片时，它究竟在学什么？它学的是相关性，而不是判断。它学的是预测——在特定条件下、
+          特定时刻、特定群体的标注者，倾向于偏好哪些图像。
+        </p>
+        <p>
+          这不是什么都没有。大规模的相关性是有用的。但它不等同于品味。品味不只需要偏好，
+          还需要<em>理由</em>——能够用自身以外的某种东西来为一个选择辩护的能力。
+        </p>
+        <p>
+          实际的后果是：基于聚合人类偏好训练出来的审美模型，趋向于均值。它们收敛于广泛令人愉悦的东西，
+          而不是精确正确的东西。数据越多，这种向均值的引力越强。
+        </p>
+
+        <h2>标注界面的问题</h2>
+        <p>
+          当我们要求标注者对图像排名时，我们是在要求他们把一种私人的、半成形的质量感知，
+          投射到一个二元或序数尺度上。这个投射过程中必然有所损失。那些以需要三句话才能解释的理由而正确的图像，
+          往往输给了那些以不需要任何解释的理由而令人愉悦的图像。
+        </p>
+        <p>
+          这是一个结构性问题，而不是数据问题。增加更多标注者解决不了它。训练一个更好的奖励模型解决不了它。
+          记录偏好的界面，对于我们真正想测量的东西而言，过于粗糙。
+        </p>
+
+        <h2>一个可能的方向</h2>
+        <p>
+          我一直在想，正确的做法是否不是扩大标注规模，而是对其进行分层——找到少数几个质量隐式模型
+          连贯且清晰的标注者，并构建能够专门从他们的判断中学习的系统。这不那么民主，但可能更有用。
+        </p>
+        <p>
+          在我们所工作的规模下这是否可行，我还不知道。
+        </p>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>刘 佳祥</p>
+    <p>一个用于思考、阅读与观看的安静空间。</p>
+  </div>
+</footer>
+
+</body>
+</html>
