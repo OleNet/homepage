@@ -690,24 +690,25 @@ footer p {
 
 /* ── Dark Mode ── */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #0d0d0d;
     --ink: #e8e8e8;
     --muted: #888888;
   }
-  body { background: #0d0d0d; color: #e8e8e8; }
-  nav { background: #0d0d0d; border-color: #333; }
-  nav a { color: #888888; }
-  nav a:hover, nav a.active { color: #e8e8e8; }
-  .about-bio { color: #e8e8e8; }
-  .site-name { color: #e8e8e8; }
-  footer { border-color: #333; }
-  footer p { color: #888888; }
-  .section-links { border-color: #333; }
-  .section-links a { color: #e8e8e8; }
-  .entry-list { border-color: #333; }
-  .publication-item a { color: #a0c4ff; }
-  .article-item a { color: #a0c4ff; }
+  :root:not([data-theme="light"]) body { background: #0d0d0d; color: #e8e8e8; }
+  :root:not([data-theme="light"]) nav { background: #0d0d0d; border-color: #333; }
+  :root:not([data-theme="light"]) nav a { color: #888888; }
+  :root:not([data-theme="light"]) nav a:hover,
+  :root:not([data-theme="light"]) nav a.active { color: #e8e8e8; }
+  :root:not([data-theme="light"]) .about-bio { color: #e8e8e8; }
+  :root:not([data-theme="light"]) .site-name { color: #e8e8e8; }
+  :root:not([data-theme="light"]) footer { border-color: #333; }
+  :root:not([data-theme="light"]) footer p { color: #888888; }
+  :root:not([data-theme="light"]) .section-links { border-color: #333; }
+  :root:not([data-theme="light"]) .section-links a { color: #e8e8e8; }
+  :root:not([data-theme="light"]) .entry-list { border-color: #333; }
+  :root:not([data-theme="light"]) .publication-item a { color: #a0c4ff; }
+  :root:not([data-theme="light"]) .article-item a { color: #a0c4ff; }
 }
 
 [data-theme="dark"] {
@@ -742,5 +743,5 @@ footer p {
 
 [data-theme="dark"] .theme-toggle:hover { color: #fff; }
 @media (prefers-color-scheme: dark) {
-  .theme-toggle:hover { color: #fff; }
+  :root:not([data-theme="light"]) .theme-toggle:hover { color: #fff; }
 }

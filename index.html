@@ -47,10 +47,19 @@
 
       <div class="about-bio">
         <p>
-          毕业后在百度从事机器学习研发，至今。主导了第一批大模型上线百度搜索检索与排序系统；拿过 SuperGLUE Benchmark 世界冠军，获得过百度最高奖。此后深度参与 ERNIE 系列大模型研发——涵盖文本、多模理解、多模生成。当下正全力投入生成式 AI。
+          刘佳祥，机器学习研究员，毕业后加入百度，从事自然语言处理与大模型研发至今。
         </p>
         <p>
-          从 CNN/LSTM 到 BERT 再到 ChatGPT，有幸是这场技术变迁的亲历者，是第四次人工智能浪潮的参与者。工作之外，喜欢拍照，偏爱安静的画面。也喜欢听歌，口味广泛，多元风格的杂食者。
+          他主导了第一批大语言模型上线百度搜索的检索与排序系统，是该方向的早期推动者之一。凭借在自然语言理解领域的系统性工作，他的团队在 SuperGLUE Benchmark 评测中登顶世界排名第一，并因此获得百度最高奖。
+        </p>
+        <p>
+          此后，他深度参与 ERNIE 系列大模型的研发，工作横跨文本理解、多模态理解与多模态生成三个方向。相关成果发表于 AAAI、CVPR、KDD 等顶级学术会议，论文引用逾千次。
+        </p>
+        <p>
+          从 CNN、LSTM 的时代，到 BERT 的兴起，再到以 ChatGPT 为标志的生成式 AI 浪潮，刘佳祥是这一轮技术跃迁的全程参与者。当下，他正全力投入生成式 AI 的前沿探索。
+        </p>
+        <p>
+          工作之外，他热衷摄影，偏爱克制、安静的画面语言。亦是广泛的听乐者，涉猎多元风格。
         </p>
       </div>
     </section>
@@ -121,4 +130,32 @@
 </main>
 
 <footer>
-  <di
+  <div class="container">
+    <p>&copy; 2025 刘佳祥</p>
+  </div>
+</footer>
+
+<script>
+(function() {
+  const toggle = document.getElementById('theme-toggle');
+  const html = document.documentElement;
+  const saved = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (saved === 'light') {
+    html.setAttribute('data-theme', 'light');
+  } else if (saved === 'dark' || (!saved && prefersDark)) {
+    html.setAttribute('data-theme', 'dark');
+  }
+  toggle.addEventListener('click', () => {
+    const isDark = html.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      html.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    } else {
+      html.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+})();
+</script></body>
+</html>
