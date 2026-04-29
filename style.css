@@ -730,6 +730,10 @@ footer p {
 [data-theme="dark"] .publication-item a { color: #a0c4ff; }
 [data-theme="dark"] .article-item a { color: #a0c4ff; }
 
+/* ── Language Toggle ── */
+html.zh .lang-en { display: none; }
+html.en .lang-zh { display: none; }
+
 .theme-toggle {
   background: none;
   border: none;
@@ -744,4 +748,23 @@ footer p {
 [data-theme="dark"] .theme-toggle:hover { color: #fff; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .theme-toggle:hover { color: #fff; }
+}
+
+.lang-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  padding: 0;
+}
+.lang-toggle:hover { color: var(--ink); }
+[data-theme="dark"] .lang-toggle { color: #888; }
+[data-theme="dark"] .lang-toggle:hover { color: #fff; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .lang-toggle { color: #888; }
+  :root:not([data-theme="light"]) .lang-toggle:hover { color: #fff; }
 }
