@@ -1,9 +1,52 @@
 <!DOCTYPE html>
-<html lang="zh-Hans" class="zh">
+<html lang="en" class="zh">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>刘 佳祥</title>
+  <title>Liu Jiaxiang – From Tokens to Pixels</title>
+  <meta name="description" content="Liu Jiaxiang (刘佳祥) – Machine learning researcher at Baidu. Head of ERNIE Image Team, core contributor to ERNIE large models, #1 on GLUE Benchmark. Working on NLP, multimodal understanding, and generative AI." />
+  <meta name="keywords" content="Liu Jiaxiang, 刘佳祥, machine learning, ERNIE, Baidu, NLP, GLUE, text-to-image, generative AI, multimodal" />
+  <link rel="canonical" href="https://liujiaxiang.cn/" />
+  <link rel="alternate" hreflang="zh" href="https://liujiaxiang.cn/" />
+  <link rel="alternate" hreflang="en" href="https://liujiaxiang.cn/" />
+  <link rel="alternate" hreflang="x-default" href="https://liujiaxiang.cn/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Liu Jiaxiang – From Tokens to Pixels" />
+  <meta property="og:description" content="Machine learning researcher at Baidu. Head of ERNIE Image Team, core contributor to ERNIE large models, #1 on GLUE Benchmark." />
+  <meta property="og:url" content="https://liujiaxiang.cn/" />
+  <meta property="og:site_name" content="Liu Jiaxiang" />
+  <meta property="profile:first_name" content="Jiaxiang" />
+  <meta property="profile:last_name" content="Liu" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@lclbrew" />
+  <meta name="twitter:title" content="Liu Jiaxiang – From Tokens to Pixels" />
+  <meta name="twitter:description" content="Machine learning researcher at Baidu. Head of ERNIE Image Team, core contributor to ERNIE large models, #1 on GLUE Benchmark." />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Liu Jiaxiang",
+    "alternateName": "刘佳祥",
+    "url": "https://liujiaxiang.cn",
+    "jobTitle": "Machine Learning Researcher",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Baidu"
+    },
+    "knowsAbout": ["Natural Language Processing", "Large Language Models", "Generative AI", "Text-to-Image", "ERNIE"],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=nvW9CqkAAAAJ",
+      "https://x.com/lclbrew"
+    ]
+  }
+  </script>
+
   <script>(function(){var l=localStorage.getItem('lang');if(l==='en'){var h=document.documentElement;h.classList.remove('zh');h.classList.add('en');h.setAttribute('lang','en');}}());</script>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="style.css" />
@@ -189,19 +232,19 @@
       html.classList.add('en');
       html.setAttribute('lang', 'en');
       langToggle.textContent = '中';
-      document.title = 'Liu Jiaxiang';
+      document.title = 'Liu Jiaxiang \u2013 From Tokens to Pixels';
     } else {
       html.classList.remove('en');
       html.classList.add('zh');
       html.setAttribute('lang', 'zh-Hans');
       langToggle.textContent = 'EN';
-      document.title = '刘 佳祥';
+      document.title = '\u5218\u4f73\u7965 \u2013 From Tokens to Pixels';
     }
     localStorage.setItem('lang', lang);
   }
   if (html.classList.contains('en')) {
     langToggle.textContent = '中';
-    document.title = 'Liu Jiaxiang';
+    document.title = 'Liu Jiaxiang \u2013 From Tokens to Pixels';
   }
   langToggle.addEventListener('click', () => {
     setLang(html.classList.contains('zh') ? 'en' : 'zh');
