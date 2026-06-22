@@ -244,6 +244,60 @@ main {
 }
 
 /* ── Social Links ── */
+.wechat-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.wechat-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+.wechat-btn:hover {
+  color: var(--ink);
+}
+.wechat-btn svg {
+  width: 100%;
+  height: 100%;
+}
+.wechat-tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  padding: 6px 14px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.wechat-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #333;
+}
+.wechat-tooltip.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
 .social-links {
   margin-top: 0.8rem;
   margin-bottom: 1.5rem;
@@ -714,6 +768,10 @@ footer p {
   :root:not([data-theme="light"]) .entry-list { border-color: #333; }
   :root:not([data-theme="light"]) .publication-item a { color: #a0c4ff; }
   :root:not([data-theme="light"]) .article-item a { color: #a0c4ff; }
+  :root:not([data-theme="light"]) .wechat-btn { color: #888; }
+  :root:not([data-theme="light"]) .wechat-btn:hover { color: #fff; }
+  :root:not([data-theme="light"]) .wechat-tooltip { background: #555; color: #fff; }
+  :root:not([data-theme="light"]) .wechat-tooltip::after { border-top-color: #555; }
 }
 
 [data-theme="dark"] {
@@ -734,6 +792,10 @@ footer p {
 [data-theme="dark"] .entry-list { border-color: #333; }
 [data-theme="dark"] .publication-item a { color: #a0c4ff; }
 [data-theme="dark"] .article-item a { color: #a0c4ff; }
+[data-theme="dark"] .wechat-btn { color: #888; }
+[data-theme="dark"] .wechat-btn:hover { color: #fff; }
+[data-theme="dark"] .wechat-tooltip { background: #555; color: #fff; }
+[data-theme="dark"] .wechat-tooltip::after { border-top-color: #555; }
 
 /* ── Language Toggle ── */
 html.zh .lang-en { display: none; }
